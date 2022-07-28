@@ -1,0 +1,79 @@
+
+.div-container {
+    padding: 4vh 0vw 0vh 0vw;
+    background: url("/img/lineas-hexagonos-2000.webp") no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+@media (max-width: 980px) {
+  .div-container {
+    display: flex;
+    flex-direction: column;
+    padding: 120px 3vw 0vh 3vw;
+  }
+}
+@media (max-width: 620px) {
+  .div-container {
+    overflow: auto;
+    padding: 120px 0vw 0vh 0vw;
+  }
+}
+.div-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    row-gap: 20px;
+    column-gap: 5vw;
+    padding: 2vw 1vw;
+    align-items: flex-start;
+    justify-content: center;
+    height: 60vh;
+}
+@media (max-width: 980px) {
+  .div-grid {
+    height: auto;
+    padding: 5vw 0vw;
+  }
+}
+@media (max-width: 620px) {
+  .div-grid {
+    grid-template-columns: auto;
+  }
+}
+.div-grid div {
+    align-items:center;
+    justify-content: center;
+    cursor: pointer;
+       
+}
+@media (max-width: 620px) {
+    .div-title {
+    padding: 0 10%;
+  }
+}
+.div-title h1{
+  font-family:Cera Pro Bold;
+  margin: 0vw 0px 15px 0px;
+  font-size: 3vw;
+  color: #FFFFFF;
+  line-height: 1em;
+  z-index: 5;
+  text-align: center;
+}
+@media (max-width: 980px) {
+    .div-title h1 {
+    font-size: 40px;
+    margin-top: 0;
+  }
+}
+.divider {
+  width: 70px;
+  height: 4px;
+  background-image: linear-gradient(90deg, #2090BA, #0A479B);
+  margin: 0 auto;
+}
+
