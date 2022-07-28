@@ -1,0 +1,23 @@
+.div-select select {
+    font-family: Cera Pro Bold;
+    font-size: 15px;
+    color: #000;
+    background-color: #FFFFFF;
+    width: 100%;
+    padding: 9.2px;
+    border: solid 2px #A1C9EF;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    appearance: none;
+}
+.disabled {
+    color: #666666 !important;
+    margin-bottom: 5px;
+}
+.div-select option {
+    color: #060F1A;
+    font-family: Cera Pro Regular;
+}
