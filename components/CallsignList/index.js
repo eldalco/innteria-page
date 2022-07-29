@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import styles from "./callsign.module.css"
 
 const CallSignList = ({name, register} ) => {
-    const { isLoadingGet, hasErrorGet, dataGet, successGet, get } = UseCallSign();
+    const { isLoadingGet, dataGet, successGet, get } = UseCallSign();
     useEffect(() => {
         get();
       }, []);
