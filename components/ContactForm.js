@@ -3,7 +3,6 @@ import styles from "../styles/contact-form-styles";
 import useContact from "../hooks/useContact";
 import { useEffect } from "react";
 import { useState } from "react";
-import CallSignList from "./CallsignList";
 
 const ContactForm = () => {
   const [send, setSend] = useState(false);  
@@ -14,14 +13,12 @@ const ContactForm = () => {
       data = {
         payload: data,
       };
-      console.log(data)
       create(data);
     };
     useEffect(() => {
       if (hasErrorSend) {
         console.log("Error");
       } else if (dataSend == 201) {
-        console.log("Enviado");
         setSend(send = true)
         reset();
       }
@@ -76,9 +73,6 @@ const ContactForm = () => {
               </div>
 
               <div className="div-phone div-input">
-                <div className="div-cod">
-                  <CallSignList register={register} name={"id_callsign"}/>
-                </div>
                 <div className="div-number">
                   <input
                     type="tel"
@@ -120,8 +114,11 @@ const ContactForm = () => {
               <div>
                 <button>ENVIAR</button>
               </div>
-              {send === true && 
+              {send &&
               <span className="message">!Gracias por contactarnos y querer ser parte de la transformación digital¡</span>}
+              
+              {hasErrorSend &&
+                <span className="message">!En este momento el servicio no está en funcionamiento¡</span>}
             </form>
           )}
         </div>
