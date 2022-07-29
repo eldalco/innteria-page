@@ -23,7 +23,6 @@ export default css`
       padding: 60px 10px;
     }
   }
-
   .div-form h2 {
     color: #ffffff;
     font-family: Cera Pro Bold;
@@ -91,7 +90,6 @@ export default css`
       font-size: 16px;
     }
   }
-
   .div-phone {
     display: flex;
     align-items: center;
@@ -105,12 +103,7 @@ export default css`
     }
   }
   .div-number {
-    width: 70%;
-    margin-left: 10px;
+    width: 100%;
   }
-  @media (max-width: 980px) {
-    .div-number {
-      width: 60%;
-    }
-  }
+  
 `;

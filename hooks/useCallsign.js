@@ -1,4 +1,4 @@
-import { useCallback, useContext, useState } from "react";
+import { useCallback, useState } from "react";
 import callsign from "../services/callsign";
 
 export default function UseCallsign() {
@@ -12,7 +12,7 @@ export default function UseCallsign() {
   const get = useCallback(() => {
     setStateGet({ loadingGet: true, errorGet: null });
     callsign
-      .get("")
+      .get()
       .then((data) => {
         setStateGet({
           loadingGet: false,

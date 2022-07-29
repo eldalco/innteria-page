@@ -3,20 +3,15 @@ import React, { useState, useEffect } from 'react';
 import { motion } from "framer-motion";
 
 const ServiceSection = ({dataSlider, titulo, contenido}) => {
-    const [slider, setSlider] = useState (1);
-   
-    const [data, setData] = useState({
-        
+    const [slider, setSlider] = useState (1);   
+    const [data, setData] = useState({        
         img: dataSlider[slider]["img"],
-        id: dataSlider[slider]["id"]
-       
+        id: dataSlider[slider]["id"]       
     });
     useEffect(() => {
-        setData({
-            
+        setData({            
             img: dataSlider[slider]["img"],
-            id: dataSlider[slider]["id"]
-            
+            id: dataSlider[slider]["id"]            
         });
     }, [slider]);
 
@@ -45,8 +40,7 @@ const ServiceSection = ({dataSlider, titulo, contenido}) => {
                     opacity: 0,          
                     transition: { duration: 0.3, ease: [0.17, 0.67, 0.83, 0.95] },
                   }}/>
-            </div>
-            
+            </div>            
             <div className={styles["div-content"]}>
                 <h3>{titulo}</h3>
                 <p>{contenido}</p>

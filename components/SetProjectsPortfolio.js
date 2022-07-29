@@ -10,16 +10,12 @@ export default function SetProjectsPortfolio({ data }) {
         <ProjectPortafolio data={data[4]} />
         <ProjectPortafolio data={data[2]} />
         <ProjectPortafolio data={data[8]} />       
-        
         <ProjectPortafolio data={data[7]} />
         <ProjectPortafolio data={data[0]} />
-        <ProjectPortafolio data={data[3]} />
-       
+        <ProjectPortafolio data={data[3]} />       
         <ProjectPortafolio data={data[15]} />
-        <ProjectPortafolio data={data[9]} />
-        
-        <ProjectPortafolio data={data[11]} />
-       
+        <ProjectPortafolio data={data[9]} />        
+        <ProjectPortafolio data={data[11]} />       
         <ProjectPortafolio data={data[6]} />
         <ProjectPortafolio data={data[13]} />
         <ProjectPortafolio data={data[14]} />

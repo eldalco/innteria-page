@@ -13,7 +13,6 @@ const Layout = ({ children }) => {
 
   const changeClick = () => {
     setClick(!click);
-    console.log('click');
   };
   
   return (
